@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rebeccapurple;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    height: 9vh;
+    background-color: white;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .section-2 {
+   display: flex;
+}
+
+.navbar .section-2 .nav-link {
+    margin-right: 80px;
+}
+
+a {
+    margin-right: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .section-2 .btn-1 {
+    height: 25px;
+    width: 120px;
+    border: none;
+    background-color: rgb(238, 184, 85);
+}
+
+/* Main Section */
+.main-section {
+    position: relative;
+}
+
+/* Photo */
+
+.main-section .photo {
+    height: 730px;
+    width: 450px;
+      background-image: url('images/photo.jpeg');
+      background-repeat: none;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      left: 7%;
+}
+
+/* Section 1 */
+ .main-section .section-1 {
+    height: 32vh;
+    background-color: rgb(238, 184, 85);
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+} 
+
+.main-section .section-1 .join_now {
+    height: 100%;
+    width: 50%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section .section-1 .join_now .title {
+    font-size: 70px;
+    line-height: 60px;
+}
+
+.main-section .section-1 .join_now .title span {
+    font-size: 50px;
+    color: white;
+}
+
+.main-section .section-1 .join_now .sub-title {
+    font-weight: 300;
+    line-height: 0px;
+    font-size: 22px;
+}
+
+.main-section .section-1 .join_now .description {
+    font-size: 14px;
+    color: rgb(156, 150, 150);
+    width: 300px;
+} 
+
+/* Section 2 */
+ .main-section .section-2 {
+    height: 32vh;
+    background-color: white;
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+} 
+
+ .main-section .section-2 .newsletter .title {
+    color:rgb(238, 184, 85);
+    font-size: 25px;
+    font-weight: 300;
+ }
+
+  .main-section .section-2 .newsletter {
+    height: 100%;
+    width: 50%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+ .main-section .section-2 .newsletter .full-name  .fname-input {
+    margin-right: 40px;
+ }
+
+ .main-section .section-2 .newsletter  .email-input {
+    width: 335px;
+ }
+
+ .main-section .section-2 .newsletter .send-btn{
+     height: 25px;
+    width: 120px;
+    border: none;
+    background-color: rgb(238, 184, 85);
+ }
+
+ .main-section .section-2 .newsletter .discount{
+    height: 50px;
+    width: 120px;
+    border: none;
+    background-color: rgb(238, 184, 85);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  input {
+    border: none;
+    border-bottom: black solid 1px;
+    outline: none;
+    margin-bottom: 30px;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 9vh;
+    background-color: rgb(238, 184, 85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+
+
+/* Responsive Styles */
+
+/* Tablet (Max-width: 768px) */
+@media (max-width: 768px) {
+
+ /* Mian - Section 1 Photo */
+.main-section .photo {
+    display: none;
+}
+
+ /* Mian - Section 1 */
+.main-section .section-1 .join_now {
+    width: 100%;
+ }
+
+ /* Mian - Section 2 */
+.main-section .section-2 .newsletter {
+    width: 100%;
+ }
+
+}
+
+/*  Mobile Screens: Mobile (max-width: 425px) */
+@media (max-width: 425px) {
+
+    /* Navbar */
+.navbar {
+    padding: 0 20px;
+}
+
+/* Section 2 of the Navbar */
+.navbar .section-2 {
+   display: none;
+}
+
+
+ /* Section 1 */
+ .main-section .section-1 {
+    height: 38.8vh;
+    padding: 10px;
+} 
+
+.main-section .section-1 .join_now .title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.main-section .section-1 .join_now .title span {
+    font-size: 40px;
+    color: white;
+}
+
+
+ /* Section 2 */
+ .main-section .section-2 {
+    height: 38.8vh;
+    padding: 10px;
+} 
+
+  .main-section .section-2 .newsletter  {
+    width: 100%;
+  }
+
+
+ .main-section .section-2 .newsletter .full-name  .fname-input {
+    margin-right: 20px;
+ }
+
+}
